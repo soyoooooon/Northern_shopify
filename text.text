@@ -1,0 +1,25 @@
+ Banner
+ -Background image
+ -subtitle
+ -main title
+
+ Promo blocks
+ -repeatable blocks
+ --subtitle
+ --main title
+-- description
+-- image
+
+
+
+ Newsletter
+ - title
+ - cosl text
+ - input for email
+
+ Logos
+ -
+
+ social
+ - pull from main setting
+ -social icons
