@@ -1,0 +1,40 @@
+<div class="featured-collection__item">
+  <a href="{{ collections[section.settings.collection_handle].url }}">
+    <h3>Featured Products</h3>
+    <p>The best of our store</p>
+  </a>
+</div>
+
+{% for product in collections[section.settings.collection_handle].products %}
+  <div class="featured-collection__item">
+    <a class="product-card" href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_image.src | img_url: '1024x' }}" alt="">
+      {{ product.title }}
+      <p>
+        <span aria-hidden="true">—</span>
+        {%- if product.price_varies -%}
+          <span class="visuallyhidden">Starting at</span>
+          {{ product.price_min | money_without_trailing_zeros }}
+          <span aria-hidden="true">+</span>
+        {%- else -%}
+          {{ product.price | money_without_trailing_zeros }}
+        {%- endif -%}
+      </p>
+    </a>
+  </div>
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "class": "featured-collection__wrapper",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection_handle",
+      "label": "Collection"
+    }
+  ]
+}
+{% endschema %}
