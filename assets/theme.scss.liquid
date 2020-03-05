@@ -8686,11 +8686,75 @@ $min-height-disclosure: 92px;
   margin: 0 $footer-spacing-extra-small;
 
   @include media-query($medium-up) {
-    padding-bottom: 0;
+    padding: 0;
 
     &:first-of-type {
       margin-left: 0;
     }
   }
 }
+
+.banner-section{
+  text-align:center;
+  width: 100vw;
+  height:100vh;
+
+
+
+
+}
+
+.banner-title{
+  color: #ffffff;
+
+}
+
+
+.banner-image{
+width: 100vw;
+height: 100vh;
+background: center / cover no-repeat;
+}
+
+
+.promo-block-section{
+  display: inline;
+ height: 100vh;
+ weight: 100vw;
+
+
+  .promo-block-title{
+    color: #ffffff
+  }
+}
+
+.promo-block-image{
+  background: center / cover no-repeat;
+  width: 100%;
+  padding: 50px 20px;
+
+  &::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+  .testimonial-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+
+  @media screen and (min-width: 640px) {
+    .testimonial-section {
+      padding: 250px 20px;
+    }
+  }
+
+
 
