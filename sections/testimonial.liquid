@@ -4,10 +4,10 @@
   - Apply this section to your landing page (page.summer-promotion.liquid)
   - Update as you see fit.
 {%- endcomment -%}
-
+<div class="testimonial-image" style="background-image: url('{{ section.settings.image | img_url: '1800x' }}');">
 {% if section.settings.title != blank %}
 <h2>{{ section.settings.title }}</h2>
-{% aendif %}
+{% endif %}
 
 {%- if section.blocks.size > 0 -%}
   {%- for block in section.blocks -%}
