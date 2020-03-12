@@ -227,6 +227,8 @@
           {% endform %}
         </div>
 
+
+
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
         {%- endcomment -%}
@@ -265,7 +267,7 @@
   </script>
 {% endunless %}
 
-
+<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
 
 {% schema %}
 {

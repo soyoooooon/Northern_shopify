@@ -11,7 +11,7 @@
       <img src="{{ product.featured_image.src | img_url: '1024x' }}" alt="">
       {{ product.title }}
       <p>
-        <span aria-hidden="true">—</span>
+        <span aria-hidden="true"></span>
         {%- if product.price_varies -%}
           <span class="visuallyhidden">Starting at</span>
           {{ product.price_min | money_without_trailing_zeros }}
