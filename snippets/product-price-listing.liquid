@@ -30,6 +30,8 @@
   {%- if product.price_varies == false and product.compare_at_price_varies %} price--compare-price-hidden {% endif -%}
   {%- if variant.unit_price_measurement %} price--unit-available {% endif -%}"
 >
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+
   {% if show_vendor and product %}
     <div class="price__vendor price__vendor--listing">
       <dt>
