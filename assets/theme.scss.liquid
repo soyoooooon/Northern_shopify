@@ -2577,16 +2577,22 @@ textarea {
   padding: 0;
   text-align: center;
   margin:  0;
+  height: 100px;
 
 
   a {
-    padding: 3px 10px;
+   text-align:center;
+   padding: 7px;
+   margin-top: 29px;
+   font-size:1em;
   }
 }
 
 .site-nav--centered {
   padding-bottom: $gutter-site-mobile;
 }
+
+
 
 /*================ Site Nav Links ================*/
 .site-nav__link {
@@ -7179,6 +7185,7 @@ $toolbar-height-small: 46px;
 .site-footer {
   margin-top: $section-spacing;
   padding: $footer-spacing-large 0 $section-spacing 0;
+  background-color:#87ceeb;
 
   @include media-query($medium-up) {
     padding-bottom: $section-spacing-small;
@@ -8852,15 +8859,23 @@ background: center / cover no-repeat;
   .test-index{
     text-align:center;
     margin: 0 auto;
-    padding-top: 200px;
+
     padding-bottom: 150px;
     h2{
-      font-size: 3em;
+      font-size: 2.5em;
       color: #003152;
+      padding-bottom: 100px;
     }
     p{
-    font-size: 1.5em;
+      span{
+        font-size: 2.7em;
+        color:#89cff0
+      }
+    font-size: 1em;
     color: #152238;
+    width: 70vw;
+    line-height: 45px;
+    margin: 0 auto;
     }
   }
 
